@@ -180,14 +180,14 @@ h2{
 
 .images{
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           flex-wrap: wrap;
           align-items: center;
+          padding: 20px;
          
 }
 
 .images img {
-          margin: 20px;
           width: 80px;
           filter: invert(1);
           
@@ -197,6 +197,7 @@ h2{
           transition: 0.5s;
           filter: none;
 }
+
 
 .contact{
           width: 100%;
