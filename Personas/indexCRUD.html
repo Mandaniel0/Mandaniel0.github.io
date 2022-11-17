@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styleCRUD.css" />
+    <link rel="icon" href="img/personas.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,400;1,500&family=Kanit&family=Lato:ital,wght@0,400;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personas</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <video controls autoplay loop class="video">
+          <source src="img/smoke.mp4" type="video/mp4" />
+        </video>
+        <h1>Personas</h1>
+      </header>
+      <div class="form">
+        <form id="formulario" class="formulario">
+          <div class="valor">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div class="valor">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" />
+          </div>
+
+          <div class="valor">
+            <label for="sueldo">Sueldo: </label>
+            <input type="number" id="sueldo" name="sueldo" />
+          </div>
+
+          <button
+            type="submit"
+            class="btnAñadir"
+            id="botonAñadir"
+            onclick="añadirPersona()"
+          >
+            Añadir
+          </button>
+
+          <div class="modal modal-width">
+            <dialog id="dialogConfirmacion">
+              <label for="confirmacion"
+                >¿Esta seguro/a de insertar los datos?
+                <button type="submit" name="añadir" id="si">Si</button>
+                <button type="button" id="no">No</button>
+              </label>
+            </dialog>
+          </div>
+        </form>
+      </div>
+      <main class="main">
+        <div class="table-content">
+          <table id="table" class="table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Sueldos</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+
+            <tbody class="tbody">
+              <div class="modal modal-width">
+                <dialog id="dialogBorrar">
+                  <label for="confirmacion"
+                    >¿Esta seguro/a de borrar los datos?
+                    <button type="button" id="siBorrar">Si</button>
+                    <button type="button" id="noBorrar">No</button>
+                  </label>
+                </dialog>
+              </div>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal">
+          <dialog id="dialogEditar">
+            <form id="formaEditar" method="post">
+              <div class="valor">
+                <label for="nombreActualizado">Nombre: </label>
+                <input
+                  type="text"
+                  id="nombreActualizado"
+                  name="nombreActualizado"
+                  required
+                />
+              </div>
+
+              <div class="valor">
+                <label for="apellidoActualizado">Apellido: </label>
+                <input
+                  type="text"
+                  id="apellidoActualizado"
+                  name="apellidoActualizado"
+                  required
+                />
+              </div>
+
+              <div class="valor">
+                <label for="sueldoActualizado">Sueldo: </label>
+                <input
+                  type="number"
+                  id="sueldoActualizado"
+                  name="sueldoActualizado"
+                  required
+                />
+              </div>
+              <button type="button" id="cerrarModal">Cerrar</button>
+              <button type="submit" id="actualizar">Actualizar</button>
+            </form>
+          </dialog>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="Persona.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
