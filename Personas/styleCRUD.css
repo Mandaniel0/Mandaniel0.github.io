@@ -1,0 +1,320 @@
+* {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+}
+
+/*Container*/
+.container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+       height: 100%;
+        max-width: 100%;
+        align-items: center;
+        overflow: hidden;
+ 
+          
+}
+
+h1 {
+
+          font-size: 10vmin;
+          color: white;
+          text-shadow: 2px 2px 5px black;
+          font-family: 'Inter Tight', sans-serif;
+          text-transform: uppercase;
+          z-index: 5;
+          transition: 1s;
+
+}
+
+h1:hover{
+      color: cyan;
+}
+
+/*Header*/
+.header{
+         display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          height: 300px;
+          width: 100%;
+          max-width: 100%;
+          background-color: black;
+}
+
+.video{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    
+}
+/*Formulario*/
+.form {
+  
+          padding: 40px;
+          width: 100%;
+          background-color: rgba(211, 206, 206, 0.397);
+
+}
+
+.formulario {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      
+
+
+}
+
+.valor {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 10px;
+          
+
+
+
+}
+
+label {
+          font-weight: bold;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 20px;
+          color: darkslategray;
+
+}
+
+.form input {
+          outline: none;
+          padding: 5px;
+          font-size: 15px;
+          border: none;
+          background-color: transparent;
+          width: 300px;
+          text-align: center;
+          transition: width 0.5s;
+}
+
+.form button {
+          padding: 15px;
+          border: none;
+          font-size: 15px;
+          font-weight: bold;
+          border-radius: 30px;
+          transition: background-color, 0.5s;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+      }
+.btnAñadir{
+      margin: 20px;
+}
+
+button{
+      cursor: pointer;
+      color: white;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 128, 0.836);
+      outline: none;
+
+}
+
+button:hover {
+
+          background-color: rgba(0, 139, 139, 0.808);
+
+}
+
+.form input:hover {
+          border-bottom: 2px solid rgba(0, 0, 128, 0.836);
+          width: 350px;
+
+}
+
+.form input:focus {
+          border-bottom: 2px solid rgba(0, 0, 128, 0.836);
+
+}
+
+/*Table*/
+.main {
+      width: 100%;
+}
+
+.table-content{
+      width: 100%;
+    
+      
+}
+
+.table {
+            width: 100%;
+          max-width: 100%;
+          text-align: center;
+}
+
+
+
+.table,
+th,
+td {
+          padding: 15px;
+          border-collapse: collapse;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+tbody tr {
+          transition: background-color 0.5s;
+          background-color: rgba(128, 128, 128, 0.452);
+        
+}
+
+tbody tr:hover {
+          background-color: rgba(0, 139, 139, 0.808);
+          color: white;
+}
+
+thead tr {
+          background-color: rgba(0, 0, 128, 0.836);
+          font-size: 18px;
+          color: white;
+}
+
+.iframe{
+      width: 100%;
+      height: 100%;
+      background-color: rebeccapurple;
+}
+
+.mensaje{
+      text-align: center;
+}
+
+.mensajeError {
+          background-color: crimson;
+          padding: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: white;
+          border-radius: 15px;
+          margin: 5px;
+}
+
+.mensajeAdvertencia{
+          background-color: orange;
+          padding: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: white;
+          border-radius: 15px;
+          margin: 5px;
+}
+
+.mensajeExito{
+          background-color: darkgreen;
+          padding: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: white;
+          border-radius: 15px;
+          margin: 5px;
+}
+
+.editar{
+          cursor: pointer;
+          width: 28px;
+          margin: 5px;
+          
+
+}
+.editar:active{
+          transform: translateY(2px);
+}
+
+.borrar {
+          cursor: pointer;
+          width: 28px;
+          margin: 5px;
+}
+.borrar:active{
+          transform: translateY(2px);
+}
+
+.modal dialog{
+      margin-left: auto;
+      margin-right: auto;
+}
+.modal-width{
+
+      width: 100%;
+}
+
+.modal-width dialog{
+      padding: 40px;
+}
+
+.modal-width button{
+border-radius: 40px;
+margin: 12px;
+padding: 15px 30px;
+
+}
+
+dialog{
+      
+      position: fixed;
+      padding: 20px;
+      border: none;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      transition: 1s;
+      
+         
+          
+      }
+      dialog input{
+      outline: none;
+      padding: 3px;
+      margin: 20px;
+                
+      }
+
+
+dialog input:focus{
+      border: 1px solid rgba(0, 0, 128, 0.836);
+}
+
+dialog button{
+          padding: 15px;
+          border: none;
+          font-size: 15px;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 50px;
+          transition: background-color, 0.5s;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+      }
+   
+
+
+@media screen and (min-width: 360px){
+      .table-content{
+        
+            overflow-x: auto;
+            
+      }
+}
+
