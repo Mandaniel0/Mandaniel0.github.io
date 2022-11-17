@@ -148,6 +148,7 @@ button:hover {
 
 .table-content{
       width: 100%;
+      overflow-x: auto;
     
       
 }
@@ -308,13 +309,4 @@ dialog button{
           
       }
    
-
-
-@media screen and (min-width: 360px){
-      .table-content{
-        
-            overflow-x: auto;
-            
-      }
-}
 
