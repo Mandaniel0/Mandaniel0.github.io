@@ -137,6 +137,12 @@ h2{
           padding: 10px;
 }
 
+.card-text {
+          background-color: rgba(255, 255, 255, 0.596);
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+}
+
 .tecnologias{
           display: flex;
           justify-content: space-evenly;
