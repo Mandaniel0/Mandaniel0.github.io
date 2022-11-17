@@ -166,7 +166,7 @@ td {
           padding: 15px;
           border-collapse: collapse;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+            text-transform: uppercase;
 }
 
 tbody tr {
