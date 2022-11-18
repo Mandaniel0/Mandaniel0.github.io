@@ -58,7 +58,6 @@ class Persona {
       modalBorrar.close();
       personas.splice(eliminarPersona, 1);
       this.crearHTML();
-      console.log(personas);
     };
     btnNoBorrar.onclick = () => {
       modalBorrar.close();
@@ -95,7 +94,7 @@ class Persona {
         persona.sueldo = +sueldoActualizado.value;
       }
     });
-    console.log(personas);
+
     modal.close();
     this.crearHTML();
   }

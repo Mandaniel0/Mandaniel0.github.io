@@ -54,7 +54,7 @@ function añadirPersona() {
           persona.crearHTML();
           persona.mensaje("exito");
           formulario.reset();
-          console.log(personas);
+
           return;
         } else {
           persona.mensaje("advertencia");

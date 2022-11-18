@@ -24,7 +24,7 @@
         <h1>Personas</h1>
       </header>
       <div class="form">
-        <form id="formulario" class="formulario">
+        <form id="formulario" class="formulario" method="POST">
           <div class="valor">
             <label for="nombre">Nombre: </label>
             <input type="text" id="nombre" name="nombre" />
@@ -89,14 +89,13 @@
 
         <div class="modal">
           <dialog id="dialogEditar">
-            <form id="formaEditar" method="post">
+            <form id="formaEditar">
               <div class="valor">
                 <label for="nombreActualizado">Nombre: </label>
                 <input
                   type="text"
                   id="nombreActualizado"
                   name="nombreActualizado"
-                  required
                 />
               </div>
 
@@ -106,7 +105,6 @@
                   type="text"
                   id="apellidoActualizado"
                   name="apellidoActualizado"
-                  required
                 />
               </div>
 
@@ -116,7 +114,6 @@
                   type="number"
                   id="sueldoActualizado"
                   name="sueldoActualizado"
-                  required
                 />
               </div>
               <button type="button" id="cerrarModal">Cerrar</button>
