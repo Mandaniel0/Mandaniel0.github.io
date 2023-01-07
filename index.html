@@ -4,130 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="img/Portafolio@AFRJ.png" />
     <link rel="stylesheet" href="Style.css" />
-    <title>Portafolio_AFRJ</title>
+    <title>Portafolio@AFRJ</title>
   </head>
   <body>
     <div class="container">
-      <header
-        class="header"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
-        <h1>Anniel Francisco Reyes Javier</h1>
-        <div class="descripcion">
-          <h2>¿Quien soy?</h2>
-          <p>
-            Soy estudiante del Instituto Tecnológico de las Américas(ITLA).
-            Estudio en la carrera de Desarrollo de Software. Cuento con
-            conocimientos de SQL Server, HTML 5, CSS3, JavaScript, Java, Git y
-            GitHub. Además, soy bachiller en
-            <strong
-              >Desarrollo y Administración de Aplicaciones Informáticas.</strong
-            >
-          </p>
+      <header class="header">
+        <div>
+          <nav class="nav">
+            <ul class="ul-nav">
+              <li class="proyectos">Proyectos</li>
+              <li class="habilidades">Habilidades</li>
+              <li class="contacto">Contacto</li>
+              <a class="correo" href="mailto:annielfranciscoreyes@gmail.com"
+                >annielfranciscoreyes@gmail.com</a
+              >
+            </ul>
+          </nav>
+        </div>
+        <div class="portafolio">
+          <p>Portafolio</p>
         </div>
       </header>
-
       <main class="main">
-        <h2>Proyectos</h2>
-
-        <div class="contenedor-cards">
-          <div class="card" data-aos="flip-up">
-            <div class="card-title">
-              <img src="img/folder.png" alt="" />
-              <h3>CRUD-01</h3>
-            </div>
-            <div class="card-text">
+        <section>
+          <div class="content">
+            <div>
+              <h2>Hola, soy Anniel</h2>
               <p>
-                Este es un CRUD para ingresar nombre, apellido y sueldo de una
-                persona.
+                Soy estudiante del Instituto Tecnológico de las Américas(ITLA).
+                Estudio Desarrollo de Software. Cuento con conocimientos de SQL
+                Server, HTML 5, CSS3, JavaScript, Java, Git y GitHub. Además,
+                soy bachiller en Desarrollo y Administración de Aplicaciones
+                Informáticas.
               </p>
-              <div class="tecnologias">
-                <strong><p class="html">HTML 5</p></strong>
-                <strong><p class="css">CSS3</p></strong>
-                <strong><p class="js">JavaScript</p></strong>
-              </div>
-              <a href="Personas/indexCRUD.html" class="ver" target="_self"
-                >Ver</a
-              >
             </div>
-          </div>
 
-          <div class="card" data-aos="flip-up">
-            <div class="card-title">
-              <img src="img/folder.png" alt="" />
-              <h3>LOREM-02</h3>
-            </div>
-            <div class="card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" class="ver" target="_self">Ver</a>
+            <div>
+              <img src="img/Principal.jpg" alt="" />
             </div>
           </div>
-
-          <div class="card" data-aos="flip-up">
-            <div class="card-title">
-              <img src="img/folder.png" alt="" />
-              <h3>LOREM-03</h3>
-            </div>
-            <div class="card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" class="ver" target="_self">Ver</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="habilidades">
-          <h2>Habilidades</h2>
-          <div class="images">
-            <img src="img/html.png" alt="" data-aos="zoom-in" title="HTML 5" />
-            <img src="img/css-3.png" alt="" data-aos="zoom-in" title="CSS3" />
-            <img
-              src="img/java-script.png"
-              alt=""
-              data-aos="zoom-in"
-              title="JavaScript"
-            />
-            <img src="img/git.png" alt="" data-aos="zoom-in" title="Git" />
-            <a
-              href="https://github.com/Mandaniel0/Mandaniel0.github.io.git"
-              target="_blank"
-              ><img
-                src="img/github.png"
-                alt=""
-                data-aos="zoom-in"
-                title="GitHub"
-            /></a>
-            <img
-              src="img/sql-server.png"
-              alt=""
-              data-aos="zoom-in"
-              title="SQL Server"
-            />
-            <img src="img/java.png" alt="" data-aos="zoom-in" title="Java" />
-          </div>
-        </div>
-
-        <div class="contact">
-          <h2>Contacto</h2>
-          <div class="contact-content">
-            <p>Puedes contactarme por medio del siguiente correo:</p>
-            <a href="mailto:annielfranciscoreyes@gmail.com"
-              >annielfranciscoreyes@gmail.com</a
-            >
-          </div>
-        </div>
+        </section>
       </main>
-      <div class="footer">
-        <footer>@<i class="fa fa-copyright" aria-hidden="true">AFRJ</i></footer>
-      </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
