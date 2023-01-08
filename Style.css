@@ -130,28 +130,4 @@ body *::selection{
 }
 
 
-.ul-nav a {
-          border: 2px solid white;
-          padding: 5px;
-          color: white;
-          border-radius: 30px;
-          text-decoration: none;
-          transition: .5s;
-          font-size: 20px;
-}
-
-.ul-nav a:hover{
-         color: black;
-         background-color: white;
-         font-weight: 600;
-        
-         
-}
-
-.correo{
-          text-align: center;
-          visibility: hidden;
-          
-         
-}
 
