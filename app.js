@@ -12,7 +12,10 @@ function eventListener() {
     );
 
     if (Notification.permission === "granted") {
-      const notificacion = new Notification("annielfranciscoreyes@gmail.com");
+      const notificacion = new Notification("annielfranciscoreyes@gmail.com", {
+        icon: "img/icon-A.png",
+        body: "@AFRJ",
+      });
 
       notificacion.onclick = () => {
         window.open("mailto:annielfranciscoreyes@gmail.com");
