@@ -13,6 +13,7 @@ function actualizarEstado() {
   } else {
     let conex = document.createElement("h1");
     conex.textContent = "Sin Conexión...";
+    conex.style.textAlign = "center";
     document.write(conex);
   }
 }
