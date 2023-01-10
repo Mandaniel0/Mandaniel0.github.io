@@ -3,8 +3,21 @@ let proyectos = document.querySelector(".proyectos");
 let habilidades = document.querySelector(".habilidades");
 
 //Eventos
-eventListener();
 
+window.addEventListener("online", actualizarEstado);
+window.addEventListener("offline", actualizarEstado);
+
+function actualizarEstado() {
+  if (navigator.onLine) {
+    console.log("Conectado");
+  } else {
+    let conex = document.createElement("h1");
+    conex.textContent = "Sin Conexión...";
+    document.write(conex);
+  }
+}
+
+eventListener();
 function eventListener() {
   contacto.addEventListener("click", () => {
     Notification.requestPermission().then((resultado) =>
