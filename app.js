@@ -7,9 +7,7 @@ eventListener();
 
 function eventListener() {
   contacto.addEventListener("click", () => {
-    Notification.requestPermission().then((resultado) =>
-      console.log(resultado)
-    );
+    Notification.requestPermission();
 
     if (Notification.permission === "granted") {
       const notificacion = new Notification("annielfranciscoreyes@gmail.com", {
